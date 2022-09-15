@@ -236,7 +236,7 @@ class BasePlugin:
             ReadModbus(client, "Apparent_Power_L2",       0x0014, _UNIT_APPARENTPOWER_L2)                      #VA
             ReadModbus(client, "Apparent_Power_L3",       0x0016, _UNIT_APPARENTPOWER_L3)                      #VA
             
-            ReadModbus(client, "Total_Reactive_Power",    0x003C, _UNIT_TOTALREACTIVEPOWER)                    #KVAr
+            ReadModbus(client, "Total_Reactive_Power",    0x003C, _UNIT_TOTALREACTIVEPOWER)                    #VAr
             
             ReadModbus(client, "Reactive_Power_L1",       0x0018, _UNIT_REACTIVEPOWER_L1)                      #VAr
             ReadModbus(client, "Reactive_Power_L2",       0x001A, _UNIT_REACTIVEPOWER_L2)                      #VAr
@@ -249,7 +249,7 @@ class BasePlugin:
             ReadModbus(client, "Frequency",            	  0x0046, _UNIT_FREQUENCY)                             #Hz
 
             ReadModbus(client, "TotalActiveEnergy",    0x0156, _UNIT_TOTALACTIVEENERGY, self.Offset)     	    #kWh
-            ReadModbus(client, "TotalReactiveEnergy",  0x0158, _UNIT_TOTALREACTIVEENERGY)                	    #kvarh
+            ReadModbus(client, "TotalReactiveEnergy",  0x0158, _UNIT_TOTALREACTIVEENERGY)                	    #kVarh
             ReadModbus(client, "TotalImportActiveEnergy",  0x0500, _UNIT_TOTALIMPORTACTIVEENERGY)               #Watts
             ReadModbus(client, "TotalExportActiveEnergy",  0x0502, _UNIT_TOTALEXPORTACTIVEENERGY)               #Watts
             ReadModbus(client, "NetkWh", 0x018C, _UNIT_NET_KWH)                                                 #kWh
