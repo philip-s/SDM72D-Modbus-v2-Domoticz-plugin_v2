@@ -19,7 +19,7 @@ This plugin requires python modules: <br>
 
 NOTE: The above modules stopped working with Python 3.9 in Raspberry Rasbian bullseye (november 2022). Keep Python 3.7. !
 
-To install those above :
+To install those above (with python 3.7, will not work on bullseye) :
 ```
 sudo apt-get update
 sudo apt-get install python3.7 libpython3.7 python3.7-dev -y
