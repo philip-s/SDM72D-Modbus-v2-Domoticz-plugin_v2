@@ -16,6 +16,9 @@ You need a working Domoticz instance with working python plugin service (see log
 This plugin requires python modules: <br>
 - pyserial -> https://pythonhosted.org/pyserial/ <br>
 - minimalmodbus -> http://minimalmodbus.readthedocs.io<br>
+
+NOTE: The above modules stopped working with Python 3.9 in Raspberry Rasbian bullseye (november 2022). Keep Python 3.7. !
+
 To install those above :
 ```
 sudo apt-get update
