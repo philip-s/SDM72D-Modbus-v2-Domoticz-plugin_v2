@@ -20,12 +20,13 @@ This plugin requires python modules: <br>
 NOTE: The above modules stopped working with Python 3.9 in Raspberry Rasbian bullseye (november 2022). Keep Python 3.7. !
 
 For Bullseye and newer raspbians: start from installing python 3.7 instead of 3.9: https://www.linuxcapable.com/how-to-install-python-3-7-on-debian-11-bullseye/ <br>
-Please install both python 3.7 and python PIP 3.7 from the link above.
+Please install both python 3.7 and python PIP 3.7 from the link above. <br>
+Next, do this:
 ```
 sudo apt-get update
-sudo apt-get install python3.7 libpython3.7 python3.7-dev -y
-sudo apt-get install python-pip -y
-sudo apt-get install python3-pip -y
+sudo apt-get install python3.7 libpython3.7 python3.7-dev -y # <--- Archive working with old Pythons
+sudo apt-get install python-pip -y # <--- Archive working with old Pythons
+sudo apt-get install python3-pip -y 
 pip install pyserial
 pip install minimalmodbus
 sudo pip3 install -U pymodbus
