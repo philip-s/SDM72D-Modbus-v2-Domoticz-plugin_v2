@@ -31,8 +31,8 @@ pip install pyserial
 pip install minimalmodbus
 sudo pip3 install -U pymodbus
 
-wget https://bootstrap.pypa.io/get-pip.py ! <--- 
-python3.7 get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py # <--- Just in case you didn't install pip from the link above with python 3.7 installation
+python3.7 get-pip.py <--- Just in case you didn't install pip from the link above with python 3.7 installation
 
 pip3.7 install pyserial
 pip3.7 install minimalmodbus
